@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" type="text/css" href="/index.css" />
   </head>
-  <body>
+  <body onLoad="getData()">
     <div class="main-container">
       <div class="card-box -offset">
         <div class="info-box">
@@ -22,9 +22,9 @@
         </div>
         <div class="dates-box">
           <ul class="dates">
-            <li class="date"><a href="#">Daily</a></li>
-            <li class="date"><a href="#">Weekly</a></li>
-            <li class="date"><a href="#">Monthly</a></li>
+            <li onClick="displayDaily()" class="date"><a class="daily" href="#">Daily</a></li>
+            <li onClick="displayWeekly()" class="date"><a class="weekly" href="#">Weekly</a></li>
+            <li onClick="displayMonthly()" class="date"><a class="monthly" href="#">Monthly</a></li>
           </ul>
         </div>
       </div>
@@ -37,8 +37,8 @@
             <i class="fa fa-ellipsis-h"></i>
           </div>
           <div class="bottom">
-            <h1 class="hrs">32hrs</h1>
-            <p class="previous">Last Week - 36hrs</p>
+            <h1 class="hrs hrs-work"></h1>
+            <p class="previous">Last Week - <span class="prev-work"></span></p>
           </div>
         </div>
       </div>
@@ -51,8 +51,8 @@
             <i class="fa fa-ellipsis-h"></i>
           </div>
           <div class="bottom">
-            <h1 class="hrs">10hrs</h1>
-            <p class="previous">Last Week - 8hrs</p>
+            <h1 class="hrs hrs-play"></h1>
+            <p class="previous">Last Week - <span class="prev-play"></span></p>
           </div>
         </div>
       </div>
@@ -65,8 +65,8 @@
             <i class="fa fa-ellipsis-h"></i>
           </div>
           <div class="bottom">
-            <h1 class="hrs">4hrs</h1>
-            <p class="previous">Last Week - 7hrs</p>
+            <h1 class="hrs hrs-study"></h1>
+            <p class="previous">Last Week - <span class="prev-study"></span></p>
           </div>
         </div>
       </div>
@@ -79,8 +79,8 @@
             <i class="fa fa-ellipsis-h"></i>
           </div>
           <div class="bottom">
-            <h1 class="hrs">4hrs</h1>
-            <p class="previous">Last Week - 5hrs</p>
+            <h1 class="hrs hrs-exercise"></h1>
+            <p class="previous">Last Week - <span class="prev-exercise"></span></p>
           </div>
         </div>
       </div>
@@ -93,8 +93,8 @@
             <i class="fa fa-ellipsis-h"></i>
           </div>
           <div class="bottom">
-            <h1 class="hrs">5hrs</h1>
-            <p class="previous">Last Week - 10hrs</p>
+            <h1 class="hrs hrs-social"></h1>
+            <p class="previous">Last Week - <span class="prev-social"></span></p>
           </div>
         </div>
       </div>
@@ -107,8 +107,8 @@
             <i class="fa fa-ellipsis-h"></i>
           </div>
           <div class="bottom">
-            <h1 class="hrs">2hrs</h1>
-            <p class="previous">Last Week - 2hrs</p>
+            <h1 class="hrs hrs-care"></h1>
+            <p class="previous">Last Week - <span class="prev-care"></span></p>
           </div>
         </div>
       </div>
@@ -117,5 +117,6 @@
     <!-- <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">EJ Llovido</a>.
     </div> -->
+    <script src="/index.js"></script>
   </body>
 </html>

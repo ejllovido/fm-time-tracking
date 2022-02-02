@@ -194,10 +194,12 @@ a {
 
 @keyframes dateLift {
   from {
+    transform: translateX(-24px);
     opacity: 0;
   }
 
   to {
+    transform: translateX(0);
     opacity: 1;
   }
 }
@@ -248,6 +250,12 @@ a {
   animation: contentLift 1s;
 }
 
+@media (min-width: 1400px) {
+  .content-box {
+    height: 195px;
+  }
+}
+
 @keyframes contentLift {
   from {
     bottom: 23px;
@@ -289,6 +297,22 @@ a {
   font-weight: 300;
 
   color: #fff;
+}
+
+.content-box > .bottom > .new-hrs {
+  animation: append-animate 0.3s linear;
+}
+
+@keyframes append-animate {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 @media (min-width: 1400px) {

@@ -12,11 +12,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+<img width="1439" alt="Screen Shot 2022-02-05 at 5 24 06 AM" src="https://user-images.githubusercontent.com/38982708/152989337-5291ad2a-cd47-4a02-8b3f-06bc0ca71446.png">
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-time-tracking-dashboard-using-css-grid-tubGD82jx](https://www.frontendmentor.io/solutions/responsive-time-tracking-dashboard-using-css-grid-tubGD82jx)
 - Live Site URL: [https://fm-time-tracking.vercel.app/](https://fm-time-tracking.vercel.app/)
 
 ## My process
